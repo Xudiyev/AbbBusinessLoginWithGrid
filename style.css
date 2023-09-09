@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Grid start */
+
+.gridContainer {
+    max-width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+}
+
+.right-side {
+    background-image: url(./img/image\ 1.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+.firstSectionGridContainer {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'main main main  '
+        'footer footer footer';
+}
+
+/* Grid End */
+
+/* Header Css Start */
+header {
+    max-width: 650px;
+}
+
+.navContainer {
+    max-width: 690px;
+    margin: auto;
+}
+
+.navContent {
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 0px 28px 32px;
+}
+
+.navContent img {
+    padding: 2px 1px 2px 1px;
+}
+
+.navContent ul {
+    display: flex;
+
+}
+
+.navContent ul li {
+    padding: 2px 10px 2px 1px;
+    list-style: none;
+
+}
+
+.navContent ul li a {
+    font-family: inter;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
+.navContent {
+    display: flex;
+}
+
+/* Header Css End */
+
+/* Main css Start */
+main {
+    max-width: 650px;
+    padding: 80px;
+}
+
+.mainContainer {
+    max-width: 454px;
+    margin: auto;
+}
+
+.AsanImzaTextContent h2 {
+    font-family: inter;
+    font-weight: 600;
+    padding-right: 3px;
+    color: #A0AEC0;
+}
+
+
+.AsanImzaMobilNomresi {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: var(--gray-700, #2D3748);
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.AsanImzaIstifadeciId {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: var(--gray-700, #2D3748);
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.countryPhoneRegion {
+    position: absolute;
+    top: 32px;
+    background-color: #EDF2F7;
+    width: 73px;
+    height: 40px;
+    border-radius: 6px 0px 0px 6px;
+    border: 1px solid var(--gray-300, #CBD5E0);
+}
+
+
+
+.countryPhoneRegion p {
+    height: 40px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#phoneNumber {
+    width: 480px;
+    height: 40px;
+    padding: 8px 81px;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid var(--gray-300, #CBD5E0);
+}
+
+#phoneNumber:focus {
+    border: 1px solid;
+    outline-color: #2058BB;
+    color: #2058BB;
+}
+
+#asanId {
+    width: 480px;
+    height: 40px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--gray-300, #CBD5E0);
+}
+
+#asanId:focus {
+    outline-color: #2058BB;
+    color: #2058BB;
+}
+
+.devamEtButton {
+    width: 480px;
+    height: 48px;
+    margin-top: 24px;
+    border: 1px solid;
+    border-color: #CBD5E0;
+    border-radius: 6px;
+    opacity: 0.4;
+    background: var(--gray-300, #CBD5E0);
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    transition: background-color 0.8s ease;
+
+}
+
+.devamEtButton:hover {
+    background-color: #2058BB;
+    opacity: 1;
+    border-color: #2058BB;
+    cursor: pointer;
+
+
+}
+
+
+.veyaText {
+    width: 465px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: var(--gray-600, #4A5568);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.registrButton {
+    width: 480px;
+    display: flex;
+    height: 48px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid var(--gray-200, #E2E8F0);
+    background-color: white;
+    color: var(--gray-800, #1A202C);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 80px;
+    transition: background-color 0.8s ease;
+
+}
+
+.registrButton:hover {
+    background-color: #2058BB;
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Main css End */
+
+/* Footer Css Start */
+footer {
+    max-width: 655px;
+
+}
+
+.footerContent {
+    margin: -15px 56px;
+}
+
+.footerContent div {
+    display: flex;
+    height: 43.5px;
+    padding: 21px;
+    margin-left: 22px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footerContentLink {
+    color: var(--gray-500, #718096);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.footerContentLink span {
+    position: absolute;
+    bottom: -5px;
+    left: 1px;
+    height: 1px;
+    width: 99%;
+    background-color: #718096;
+}
+/* Footer Css End */
+
+
+
+/* Media QUERIES Start */
+@media only screen and (max-width:1300px) {
+    .right-side {
+        display: none;
+    }
+
+    .gridContainer {
+        grid-template-columns: auto;
+    }
+
+    header {
+        max-width: 100%;
+    }
+
+    .navContainer {
+        max-width: 80%;
+    }
+
+    main {
+        max-width: none;
+        padding: 80px;
+    }
+
+    footer {
+        max-width: 655px;
+        margin: auto;
+    }
+
+    .footerContent div img {
+        margin-right: 280px;
+    }
+
+}
+
+@media only screen and (max-width:992px) {
+    .right-side {
+        display: none;
+    }
+
+    .gridContainer {
+        grid-template-columns: auto;
+    }
+
+    header {
+        max-width: 100%;
+    }
+
+    .navContainer {
+        max-width: 80%;
+    }
+
+    main {
+        max-width: none;
+        padding: 80px;
+    }
+
+    footer {
+        max-width: 655px;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+
+    .right-side {
+        display: none;
+    }
+
+    .gridContainer {
+
+        grid-template-columns: auto;
+    }
+
+    .footerContent {
+        margin: 0px;
+    }
+
+}
+/* Media QUERIES End */
